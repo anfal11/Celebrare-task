@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Text Editor </title>
+    <link rel="shortcut icon" href="./images/word-logo.avif" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/70349af01a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section>
+        <h1 class="text-5xl font-extrabold text-center mt-10 font-mono"> My Text Editor </h1>
+
+        <div class="flex flex-row-reverse bg-[#94C4FE] p-4 mt-10 max-w-7xl mx-auto text-2xl">
+            <<span class="text-black grid lg:grid-cols-3 text-center gap-4 md:gap-2">
+
+                
+                <span>
+                        <!-- font-name -->
+                        <h1 class="font-semibold mb-2 mt-20"> Font </h1>
+                        <select id="font-name" class="text-white mr-2">
+                            <option value="Georgia">Georgia</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="Open Sans">Open Sans</option>
+                            <option value="Segoe-Script">math</option>
+                            <option value="Comic Sans MS">Comic Sans MS</option>
+                            <option value="cursive">cursive</option>
+                            <option value="monospace">monospace</option>
+                            <option value="sans-serif">sans-serif</option>
+                            <option value="fangsong">fangsong</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                        </select>
+
+                        <!-- font size -->
+                    <p class="font-semibold mr-16 mt-5">Size</p>
+                    <select id="font-size" class="text-white mr-2">
+                        <option value="16px">16</option>
+                        <option value="20px">20</option>
+                        <option value="25px">25</option>
+                        <option value="30px">30</option>
+                        <option value="35px">35</option>
+                        <option value="40px">40</option>
+                        <option value="45px">45</option>
+                        <option value="50px">50</option>
+                        <option value="55px">55</option>
+                        <option value="60px">60</option>
+                    </select>
+
+                
+                    <!-- font color  -->
+                    <input type="color" name="" id="color-change"> <br>
+                    <button id="addText" class="bg-white p-1 mt-20"> Add text </button>
+                </span>
+            
+            </span>
+
+            <div class="flex justify-center mt-10 mb-10 mr-20 ml-20 max-w-6xl mx-auto ">
+                <textarea id="input-text"
+                rows="10" cols="50"
+                    class="h-96 min-w-full bg-white text-black outline-none rounded-lg p-10"> </textarea>
+                    
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
