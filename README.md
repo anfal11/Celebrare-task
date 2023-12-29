@@ -26,7 +26,7 @@ This is a simple text editor web application with basic formatting options, incl
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/your-username/your-repository.git](https://github.com/anfal11/text-editor)
+   git clone https://github.com/anfal11/text-editor
 
 
 - Open the index.html file in your web browser.
