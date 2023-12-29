@@ -1,3 +1,4 @@
+## Live Link: https://habitual-bead.surge.sh
 # My Text Editor
 
 This is a simple text editor web application with basic formatting options, including font selection, font size adjustment, font color change, and undo/redo functionality.
