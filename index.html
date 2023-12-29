@@ -46,6 +46,7 @@
 
                     <!-- font size -->
                     <p class="font-semibold mr-16 mt-5">Size</p>
+                    <div class="flex">
                     <select id="font-size" class="text-white mr-2">
                         <option value="16px">16</option>
                         <option value="20px">20</option>
@@ -61,8 +62,14 @@
 
 
                     <!-- font color  -->
-                    <input type="color" name="" id="color-change"> <br>
-                    <button id="addText" class="bg-white p-1 mt-20"> Add text </button>
+                    <div class="flex gap-4 items-center ml-10">
+                        <p class="font-semibold">Color</p>
+                    <input type="color" name="" id="color-change"> 
+                    </div>
+                    </div>
+                    <br>
+
+                    <button id="addText" class="bg-white p-1 mt-10"> Add text </button>
                 </span>
 
             </span>
@@ -71,7 +78,7 @@
 
             <div class="flex justify-center mt-10 mb-10 mr-20 ml-20 max-w-6xl mx-auto ">
 
-                <textarea id="input-text" rows="10" cols="50"
+                <textarea id="input-text" rows="10" cols="30"
                     class="h-96 min-w-full bg-white text-black outline-none rounded-lg p-10"> </textarea>
 
             </div>
