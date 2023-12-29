@@ -18,26 +18,32 @@
         <h1 class="text-5xl font-extrabold text-center mt-10 font-mono"> My Text Editor </h1>
 
         <div class="flex flex-row-reverse bg-[#94C4FE] p-4 mt-10 max-w-7xl mx-auto text-2xl">
-            <<span class="text-black grid lg:grid-cols-3 text-center gap-4 md:gap-2">
 
-                
+            <div class="flex mb-2">
+                <p id="redoBtn" class="text-black p-1 mr-2" onclick="document.execCommand('redo', false, null);"  >redo</p>
+                <p id="undoBtn" class="text-black p-1" onclick="document.execCommand('undo', false, null);">undo</p>
+            </div>
+
+            <span class="text-black grid lg:grid-cols-3 text-center gap-4 md:gap-2">
+
+
                 <span>
-                        <!-- font-name -->
-                        <h1 class="font-semibold mb-2 mt-20"> Font </h1>
-                        <select id="font-name" class="text-white mr-2">
-                            <option value="Georgia">Georgia</option>
-                            <option value="fantasy">fantasy</option>
-                            <option value="Open Sans">Open Sans</option>
-                            <option value="Segoe-Script">math</option>
-                            <option value="Comic Sans MS">Comic Sans MS</option>
-                            <option value="cursive">cursive</option>
-                            <option value="monospace">monospace</option>
-                            <option value="sans-serif">sans-serif</option>
-                            <option value="fangsong">fangsong</option>
-                            <option value="Times New Roman">Times New Roman</option>
-                        </select>
+                    <!-- font-name -->
+                    <h1 class="font-semibold mb-2 mt-20"> Font </h1>
+                    <select id="font-name" class="text-white mr-2">
+                        <option value="Georgia">Georgia</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="Open Sans">Open Sans</option>
+                        <option value="Segoe-Script">math</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="cursive">cursive</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="fangsong">fangsong</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                    </select>
 
-                        <!-- font size -->
+                    <!-- font size -->
                     <p class="font-semibold mr-16 mt-5">Size</p>
                     <select id="font-size" class="text-white mr-2">
                         <option value="16px">16</option>
@@ -52,22 +58,24 @@
                         <option value="60px">60</option>
                     </select>
 
-                
+
                     <!-- font color  -->
                     <input type="color" name="" id="color-change"> <br>
                     <button id="addText" class="bg-white p-1 mt-20"> Add text </button>
                 </span>
-            
+
             </span>
 
+
+
             <div class="flex justify-center mt-10 mb-10 mr-20 ml-20 max-w-6xl mx-auto ">
-                <textarea id="input-text"
-                rows="10" cols="50"
+
+                <textarea id="input-text" rows="10" cols="50"
                     class="h-96 min-w-full bg-white text-black outline-none rounded-lg p-10"> </textarea>
-                    
+
             </div>
 
-            
+
 
         </div>
 
